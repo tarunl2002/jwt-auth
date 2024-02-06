@@ -34,11 +34,12 @@ app.post('/register', async (req, res) => {
 
     users.push(newUser);
 
-    res.status(201).json({ message: 'User registered successfully' });
+    res.status(201).json({ message: newUser });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
+  console.log(users)
 });
 
 // Login endpoint
@@ -62,7 +63,7 @@ app.post('/login', async (req, res) => {
 
     // Generate and return a JWT token upon successful login
     const token = jwt.sign({ aadharNumber: user.aadharNumber }, 'your-secret-key');
-    res.json({ token });
+    res.json({ token });``
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
@@ -71,4 +72,5 @@ app.post('/login', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  console.log(users);
 });
