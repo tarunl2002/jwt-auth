@@ -1,11 +1,11 @@
 {
   "name": "jwt-auth",
   "version": "1.0.0",
-  "description": "��#\u0000j\u0000w\u0000t\u0000-\u0000a\u0000u\u0000t\u0000h\u0000\r\u0000 \u0000#\u0000 \u0000j\u0000w\u0000t\u0000-\u0000a\u0000u\u0000t\u0000h\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
