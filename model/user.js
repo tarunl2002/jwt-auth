@@ -7,6 +7,7 @@ const userSchema = new Schema({
   phoneNumber: {type: Number},
   age: {type: Number},
   gender: {type: String},
+  type:{type: String},
   token: { type: String },
 });
 
